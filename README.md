@@ -1,15 +1,24 @@
-# proker-san web
+# Solver Jigsaw Puzzle Web
 
-这是一个用于 app 嵌入的 PWA 应用, 这里主要包含 三个页面,
-基于 ionic 的 app
+这是一个用于拼图助手的 PWA 应用，这里主要包含三个页面，基于 Ionic 的 app。
 
-- 需要界面 UI 接近原生 APP UI
-- 支持theme: default、dark theme
-- 需要 ios，也需要 android 的样式 
+- 界面 UI 接近原生 APP UI
+- 支持 theme: default、dark theme
+- 支持 iOS 和 Android 样式
 
-## mock serve
+## 技术栈
 
-- 启动一个 mock server 模拟 后台 api 与 返回
+基于 package.json 的分析，以下是项目主要使用的技术栈：
+
+13→- **前端框架**：React 19.0.0
+14→- **UI 框架**：@ionic/react 8.5.0
+15→- **路由**：react-router 5.3.4
+16→- **图标**：ionicons 7.4.0
+17→- **移动端支持**：@capacitor/core 7.4.3
+18→- **构建工具**：Vite 5.2.0（包含 PWA 支持 via vite-plugin-pwa）
+19→- **类型检查**：TypeScript 5.1.6
+20→- **测试框架**：Vitest、Cypress、@testing-library
+21→- **代码检查**：ESLint
 
 ## 相关页面
 
@@ -110,4 +119,3 @@ yarn preview
 2. 测试离线功能
 3. 测试安装提示
 4. 验证在不同设备上的显示效果
-

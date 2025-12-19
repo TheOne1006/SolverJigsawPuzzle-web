@@ -42,14 +42,11 @@ import '@ionic/react/css/palettes/dark.system.css';
 import './theme/variables.css';
 
 
-import './utils/injection-script';
-
 setupIonicReact();
 
 
 const Home = lazy(() => import('./pages/Home')); // 访问 / 时才加载 Home Chunk
 const Md = lazy(() => import('./pages/Md')); // 访问 /md/:type 时才加载
-const Demo = lazy(() => import('./pages/Demo')); // 访问 /demo 时加载
 const Project = lazy(() => import('./pages/Project')); // 访问 /project 时加载
 const AboutUs = lazy(() => import('./pages/AboutUs'))
 
@@ -70,9 +67,6 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/md/:type">
           <Md />
-        </Route>
-        <Route exact path="/demo">
-          <Demo />
         </Route>
         <Route exact path="/project">
           <Project />

@@ -19,7 +19,7 @@ export const IOS_MIN_VERSION = 'iOS 16.0 及以上版本';
 export const CUSTOMER_SERVICE_HOURS = '9:00-18:00';
 
 // 公司信息
-export const COMPANY_NAME = 'AI记牌助手';
+export const COMPANY_NAME = '🧩拼图助手';
 export const COPYRIGHT_YEAR = '2025';
 
 // 页面路径
