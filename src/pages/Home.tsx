@@ -11,16 +11,16 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Poker Scan</IonTitle>
+          <IonTitle>SolverJigsawPuzzle</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Poker Scan</IonTitle>
+            <IonTitle size="large">SolverJigsawPuzzle</IonTitle>
           </IonToolbar>
         </IonHeader>
-        
+
         <div className="ion-padding">
           <IonList>
             <IonItem button onClick={() => history.push('/md/privacy')}>
@@ -30,7 +30,7 @@ const Home: React.FC = () => {
                 <p>查看我们的隐私政策和数据处理说明</p>
               </IonLabel>
             </IonItem>
-            
+
             <IonItem button onClick={() => history.push('/md/terms')}>
               <IonIcon icon={document} slot="start" />
               <IonLabel>
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
                 <p>了解我们的服务条款和使用协议</p>
               </IonLabel>
             </IonItem>
-            
+
             <IonItem button onClick={() => history.push('/customer')}>
               <IonIcon icon={chatbubbles} slot="start" />
               <IonLabel>
