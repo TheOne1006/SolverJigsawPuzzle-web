@@ -20,98 +20,57 @@ import {
 
 
 // Hero Section 数据
-export const heroTitle = ["AI 记牌助手"];
+export const heroTitle = ["🧩拼图助手"];
 
 export const heroDescription =
-  "一款专为扑克牌爱好者打造的智能辅助工具，依托先进的目标识别算法与十万级别的真实场景数据训练，能够精准捕捉牌局信息，为用户提供高效、可靠的记牌支持，彻底告别手动记牌的繁琐，让牌局决策更轻松、更精准。";
+  "拼图辅助工具，通过对拼图图片进行智能识别和分析，快速定位目标，减轻找块压力，轻松完成拼图。";
 
 // Discovery Section 数据
 export const coreFunctionsFeatures = [
   {
-    id: "core-ml",
+    id: "puzzle-recognition",
     icon: searchOutline,
     iconColor: "stories",
-    title: "核心原理",
+    title: "智能识别拼图图像",
     subtitle:
-      "基于 ocr 图片识别技术，快速判断屏幕上的卡牌信息。\n 不读取系统内存。在保证用户隐私的前提下，提供高效、可靠的记牌服务。",
+      "基于图像识别算法，对图片进行本地分析，识别拼图区域与细节。",
     colSize: { xs: "12", md: "6", lg: "6" },
   },
   {
-    id: "remaining-cards",
-    icon: analyticsOutline,
-    iconColor: "content",
-    title: "轻松掌握剩牌数，精准把控牌局",
-    subtitle:
-      "通过AI算法实时统计场上剩余牌张数量，等价于手绘草稿，清晰了解剩余牌型分布，帮助用户提前规划出牌策略。",
-    colSize: { xs: "12", md: "6", lg: "6" },
-  },
-  {
-    id: "play-history",
-    icon: eyeOutline,
-    iconColor: "purchase",
-    title: "各家出牌一览无余",
-    subtitle:
-      "自动记录每一轮各家出牌情况，以直观的形式呈现出牌历史，用户可查看出牌信息导致决策失误，让牌局进程透明化，提升游戏体验。",
-    colSize: { xs: "12", md: "6", lg: "6" },
-  },
-  {
-    id: "vip-trial",
+    id: "offline-safe",
     icon: ribbonOutline,
     iconColor: "unlock",
-    title: "7 天免费 VIP 试用",
-    subtitle:
-      "为让用户充分体验产品核心优势，现推出 7 天免费 VIP 试用权益，试用期间可解锁全部高级功能，无限制享受智能记牌服务。",
+    title: "纯离线，开箱即用",
+    subtitle: "",
     colSize: { xs: "12", md: "6", lg: "6" },
   },
+  {
+    id: "hightlight-matching",
+    icon: eyeOutline,
+    iconColor: "purchase",
+    type: "image" as const,
+    title: "高亮匹配区域",
+    subtitle:
+      "在可视化提示中，高亮显示与目标块匹配的区域，帮助您快速定位目标。",
+    imageUrl: "images/ipad-use-001.gif",
+    imageAlt: "高亮匹配区域",
+    layout: "text-top" as const,
+    colSize: { xs: "12", md: "6", lg: "6" },
+  }
 ];
 
-export const supportedGamesFeatures = [
-  {
-    id: "games-list",
-    icon: gameControllerOutline,
-    iconColor: "guidelines",
-    title: "支持游戏类型",
-    subtitle:
-      "当前已全面适配多款热门棋牌游戏，如斗地主、跑得快、510K、掼蛋等",
-    colSize: { xs: "12", md: "12", lg: "8" },
-  },
-  // 更多游戏
-  {
-    id: "more-games",
-    icon: addCircleOutline,
-    iconColor: "stories",
-    title: "支持更多游戏",
-    subtitle: "如果你希望更多游戏可以联系 开发者 QQ 297190869",
-    colSize: { xs: "12", md: "12", lg: "4" },
-  },
-];
 
 // 隐私
 export const privacyFeatures = [
   {
-    id: "security",
+    id: "local-security",
     icon: shieldCheckmarkOutline,
     iconColor: "security",
-    title: "安全合规，非外挂工具",
-    subtitle: "本产品仅为通用文字识别工具，不修改任何游戏数据，确保公平游戏环境，严禁用于赌博等非法活动。",
-    colSize: { xs: "12", md: "6", lg: "4" },
-  },
-  {
-    id: "privacy-by-design",
-    icon: lockClosedOutline,
-    iconColor: "data",
-    title: "隐私至上，拒绝收集",
-    subtitle: "我们仅使用您的 Apple 登录邮箱作为唯一身份标识，绝不存储或分析任何其他个人隐私数据。",
-    colSize: { xs: "12", md: "6", lg: "4" },
-  },
-  {
-    id: "data-transience",
-    icon: eyeOffOutline,
-    iconColor: "isolation",
-    title: "屏幕信息，用后即毁",
-    subtitle: "记牌功能所需屏幕信息仅在本地实时处理，使用后立即销毁，绝不存储于本地或云端，全面保障您的信息安全。",
-    colSize: { xs: "12", md: "6", lg: "4" },
-  },
+    title: "本地处理，安全可控",
+    subtitle:
+      "图片识别和分析均在您的设备本地完成，不会将图片或识别结果上传至任何服务器。",
+    colSize: { xs: "12", md: "12", lg: "12" },
+  }
 ];
 
 // 游戏列表
@@ -119,9 +78,9 @@ export const appListFeatures = [
   {
     id: "discovery-stories",
     type: "image" as const,
-    title: "精选多种流行扑克",
-    subtitle: "常用扑克游戏，即刻可用方便快捷",
-    imageUrl: "images/hone-page-list_540x960.png",
+    title: "拼图总览界面",
+    subtitle: "直观展示当前拼图整体情况，方便您对比和观察拼图块所在的大致区域。",
+    imageUrl: "images/iphone-home-empty.png",
     imageAlt: "常用游戏",
     layout: "text-top" as const,
     colSize: { xs: "12", md: "6", lg: "4" },
@@ -129,9 +88,9 @@ export const appListFeatures = [
   {
     id: "game-list-contextmenu",
     type: "image" as const,
-    title: "编辑与扩展",
-    subtitle: "快捷的查看、编辑、复制现有的游戏",
-    imageUrl: "images/home_list_contextmenu_540x960.png",
+    title: "步骤引导与操作入口",
+    subtitle: "通过清晰的入口与提示，引导您完成拍照、选图、标记和匹配等关键步骤。",
+    imageUrl: "images/iphone-load-ref.png",
     imageAlt: "编辑与扩展",
     layout: "text-bottom" as const,
     colSize: { xs: "12", md: "6", lg: "4" },
@@ -139,9 +98,9 @@ export const appListFeatures = [
   {
     id: "show-case",
     type: "image" as const,
-    title: "完整的使用导航",
-    subtitle: "用例展示，方便您的自定义",
-    imageUrl: "images/edit_game_showcase_540x960.png",
+    title: "示例效果展示",
+    subtitle: "展示拼图块定位前后的对比效果，帮助您更快理解应用使用方式。",
+    imageUrl: "images/iphone-result-preview.png",
     imageAlt: "使用导航",
     layout: "text-top" as const,
     colSize: { xs: "12", md: "12", lg: "4" },
@@ -153,9 +112,9 @@ export const settingFeatures = [
   {
     id: "setting-list",
     type: "image" as const,
-    title: "设置页面",
-    subtitle: "完善设置页面, 包含用户信息、vip购买列表、用户反馈、如何使用",
-    imageUrl: "images/setting-page_540x960.png",
+    title: "设置与帮助",
+    subtitle: "提供基础设置、使用说明和意见反馈入口，帮助您按需调整体验并联系开发者。",
+    imageUrl: "images/iphone-setting.png",
     imageAlt: "设置页面",
     layout: "text-top" as const,
     colSize: { xs: "12", md: "6", lg: "6" },
@@ -163,12 +122,11 @@ export const settingFeatures = [
   {
     id: "small-window-settings",
     type: "image" as const,
-    title: "自定义画中画",
-    subtitle: "根据自己需求调整画中画样式",
-    imageUrl: "images/small-window-setting_540x960.png",
+    title: "识别参数与展示",
+    subtitle: "根据个人习惯调整识别相关参数和展示样式，获得更适合自己的拼图辅助效果。",
+    imageUrl: "images/iphone-setting-2.png",
     imageAlt: "自定义游戏规则",
     layout: "text-bottom" as const,
     colSize: { xs: "12", md: "6", lg: "6" },
   },
 ];
-

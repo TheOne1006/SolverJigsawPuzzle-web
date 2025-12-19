@@ -3,7 +3,7 @@ import { IonContent, IonPage } from "@ionic/react";
 import { HeroSection, FeatureSection } from "../components/AppStore";
 import { Footer } from "../components/Footer";
 
-import { heroTitle, heroDescription, appListFeatures, settingFeatures, coreFunctionsFeatures, supportedGamesFeatures, privacyFeatures } from "./ProjectFeaturesConstant";
+import { heroTitle, heroDescription, appListFeatures, settingFeatures, coreFunctionsFeatures, privacyFeatures } from "./ProjectFeaturesConstant";
 
 const Project: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const Project: React.FC = () => {
           <HeroSection title={heroTitle} description={heroDescription} />
 
           <FeatureSection
-            title="发现与探索"
+            title="界面与预览"
             features={appListFeatures}
             backgroundColor="light"
           />
@@ -28,12 +28,6 @@ const Project: React.FC = () => {
             title="核心功能"
             features={coreFunctionsFeatures}
             backgroundColor="light"
-          />
-
-          <FeatureSection
-            title="支持游戏"
-            features={supportedGamesFeatures}
-            backgroundColor="white"
           />
 
           <FeatureSection
